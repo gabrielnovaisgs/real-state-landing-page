@@ -3,6 +3,9 @@ import localFont from 'next/font/local'
 
 import "./globals.css";
 import { Header } from "@/components/header/header";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: "Imobiliaria Episum",

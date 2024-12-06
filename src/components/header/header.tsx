@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Header() {
     return (
-        <nav className="flex justify-between  font-sans items-center px-4 py-4">
+        <nav className="flex justify-between  font-sans items-center px-16 py-4">
             <Image src={"/logo-title.svg"} alt="logo" width={200} height={100} />
             <ul className="flex gap-4 text-xl items-center uppercase">
                 <LinkMenu>Home</LinkMenu>
