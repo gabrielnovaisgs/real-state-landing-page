@@ -1,10 +1,16 @@
+
+import CommonDestinyGallery from "@/sections/common-destiny/common-destiny-gallery";
 import Filter from "@/sections/hero-section/filter";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Home() {
   return (
-    <main className="font-sans">
-      <section id='hero-section' className="flex flex-col justify-evenly p-16 mx-16 
+    <main className="font-sans flex flex-col items-center mx-16">
+      <section id='hero-section' className="flex flex-col justify-evenly p-16 mx-16 w-full
       bg-primary/10  rounded-3xl relative overflow-hidden
       after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-primary/20
       h-[600px]
@@ -16,6 +22,14 @@ export default function Home() {
         <p className="z-10 text-xl w-3/5">Oferecemos um serviço completo para a venda, compra ou aluguel de imóveis.</p>
 
         <Filter />
+      </section>
+      <section id="common-destiny-section" className="m-16 flex flex-col gap-8 w-fit">
+        <h2 className="text-4xl font-bold text-center ">Estamos disponíveis em muitas cidades renomadas.</h2>
+        <Link href={`#`} className="self-end align-middle text-primary text-lg relative
+        group
+        after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:rounded-full after:bg-primary after:transition-all after:duration-300 hover:after:w-full
+        ">Conheça mais destinos <FontAwesomeIcon className="group-hover:translate-x-2 transition-all" icon={faArrowRight} /></Link>
+        <CommonDestinyGallery />
       </section>
     </main>
   );
