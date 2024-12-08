@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="font-sans flex flex-col items-center mx-16">
+    <main className="font-sans flex flex-col items-center mx-16 mt-24">
       <section id='hero-section' className="flex flex-col justify-evenly p-16 mx-16 w-full
       bg-primary/10  rounded-3xl relative overflow-hidden
       after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-primary/20
