@@ -7,8 +7,8 @@ export interface FilterSearchProps {
 }
 export function FilterSearch({ children, title, className }: FilterSearchProps) {
     return (
-        <li className={`${className} relative px-4 transition-all
-         [&>input]:p-3 [&>input]:my-2  [&>input]:rounded-lg [&>input]:outline-none 
+        <li className={`${className} text-center md:text-left relative transition-all
+         [&>input]:p-3 [&>input]:my-2  [&>input]:rounded-lg [&>input]:outline-none
   
         `}>
             <p>{title}</p>

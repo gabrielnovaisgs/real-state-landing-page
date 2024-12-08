@@ -25,7 +25,7 @@ export default function CommonDestinyGallery() {
 
 
     return (
-        <div className="flex gap-4 justify-center ">
+        <div className="grid grid-cols-2 md:flex gap-4 justify-center ">
 
             {comomDestiny.map((destiny, index) => (
                 <CommonDestinyBlock key={index} {...destiny} id={index} selectThisId={setSelectedDestiny} selectedId={selectedIdDestiny} />

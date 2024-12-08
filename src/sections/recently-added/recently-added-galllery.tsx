@@ -42,7 +42,7 @@ const recentlyAddedProperties: RecentlyAddedBlockProps[] = [
 ];
 export default function RecentlyAddedGallery() {
     return (
-        <div className="grid grid-cols-2  gap-4 mt-16">
+        <div className="flex flex-col md:grid grid-cols-2  gap-4 mt-16">
             {recentlyAddedProperties.map((property) => (
                 <RecentlyAddedBlock
                     key={property.id}
