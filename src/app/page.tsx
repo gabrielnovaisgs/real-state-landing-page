@@ -1,6 +1,7 @@
 
 import CommonDestinyGallery from "@/sections/common-destiny/common-destiny-gallery";
 import Filter from "@/sections/hero-section/filter";
+import RecentlyAddedGallery from "@/sections/recently-added/recently-added-galllery";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -31,6 +32,12 @@ export default function Home() {
         ">Conheça mais destinos <FontAwesomeIcon className="group-hover:translate-x-2 transition-all" icon={faArrowRight} /></Link>
         <CommonDestinyGallery />
       </section>
+
+      <section id="recently-add-section">
+        <h2 className="text-4xl font-bold text-center ">Imóveis recentemente adicionados</h2>
+        <RecentlyAddedGallery />
+      </section>
+
       <section id='contact-us-section' className="relative overflow-hidden flex flex-col items-start gap-8 w-2/3 p-16 bg-primary/10 rounded-3xl my-16">
         <h2 className="text-4xl font-bold text-center ">Fale conosco</h2>
         <p className="text-left w-1/2">Estamos sempre prontos para ajudar e responder suas perguntas.</p>
