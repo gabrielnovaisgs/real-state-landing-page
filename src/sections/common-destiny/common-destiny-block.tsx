@@ -20,7 +20,7 @@ export default function CommonDestinyBlock({ title, imageSrc, selectThisId, id, 
         `}
 
             onMouseEnter={() => handleMouseHover(true)} onMouseLeave={() => handleMouseHover(false)}>
-            <p className="uppercase absolute left-1/2 -translate-x-1/2 top-4 font-bold text-lg ">{title}</p>
+            <p className="uppercase absolute text-center left-1/2 -translate-x-1/2 top-4 font-bold text-lg ">{title}</p>
 
             <Image
                 className={`object-cover object-center w-full h-full

@@ -31,6 +31,17 @@ export default function Home() {
         ">Conheça mais destinos <FontAwesomeIcon className="group-hover:translate-x-2 transition-all" icon={faArrowRight} /></Link>
         <CommonDestinyGallery />
       </section>
+      <section id='contact-us-section' className="relative overflow-hidden flex flex-col items-start gap-8 w-2/3 p-16 bg-primary/10 rounded-3xl my-16">
+        <h2 className="text-4xl font-bold text-center ">Fale conosco</h2>
+        <p className="text-left w-1/2">Estamos sempre prontos para ajudar e responder suas perguntas.</p>
+        <Image src="/call-center-1.png" alt="logo" width={600} height={600}
+          style={{ transform: `rotateY(180deg)` }}
+          className="-z-10 absolute bottom-0 right-0 h-full w-full object-contain  object-left
+          "
+        />
+        <div className="-z-10  absolute top-0 left-0 w-full h-full bg-primary/20"> </div>
+        <button className="z-10 hover:scale-105 w-fit h-fit duration-300 bg-primary/80 hover:bg-primary transition-all hover:shadow text-white p-2 rounded">Entre em contato</button>
+      </section>
     </main>
   );
 }
