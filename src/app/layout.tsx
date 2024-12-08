@@ -5,6 +5,7 @@ import "./globals.css";
 import { Header } from "@/components/header/header";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Footer from "@/components/footer/footer";
 config.autoAddCss = false
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
