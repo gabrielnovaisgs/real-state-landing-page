@@ -20,8 +20,8 @@ export default function Home() {
         <Image src="/apartment.png" alt="logo" width={600} height={600}
           className=" absolute bottom-0 right-0 h-full w-full md:w-3/5 object-contain object-right-bottom"
         />
-        <h1 className="z-10 text-4xl text-center md:text-right md:w-3/5 font-bold">A maneira mais facil de encontrar a propriedade perfeita</h1>
-        <p className="z-10 text-xl text-center md:text-right md:w-3/5">Oferecemos um serviço completo para a venda, compra ou aluguel de imóveis.</p>
+        <h1 className="z-10 text-4xl text-center md:text-left md:w-3/5 font-bold">A maneira mais facil de encontrar a propriedade perfeita</h1>
+        <p className="z-10 text-xl text-center md:text-left md:w-3/5">Oferecemos um serviço completo para a venda, compra ou aluguel de imóveis.</p>
 
         <Filter />
       </section>
